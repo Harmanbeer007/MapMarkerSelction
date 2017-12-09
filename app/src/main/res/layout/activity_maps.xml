@@ -1,0 +1,30 @@
+<FrameLayout xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/latLongList"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentLeft="true"
+    android:focusable="false"
+    android:focusableInTouchMode="false"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentTop="true"
+    android:clickable="false"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="sandhu.harman.mapmarkerselction.MapsActivity" />
+    <ListView
+        android:id="@+id/myLatLongList"
+        android:layout_width="200dp"
+        android:layout_marginTop="200dp"
+        android:layout_height="120dp"
+        android:layout_gravity="bottom"
+        android:listSelector="@android:color/transparent" />
+
+</FrameLayout>
+
